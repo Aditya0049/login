@@ -1,0 +1,226 @@
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes spin {
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+
+}
+@keyframes blink {
+
+  0% {
+      box-shadow: 0px 0px 100px 15px orange;
+  }
+  50% {
+      box-shadow: 0px 0px 100px 15px white;
+  }
+  100% {
+      box-shadow: 0px 0px 100px 15px Green;
+  }
+}
+.spin.border{
+  border-style: dashed;
+  animation: spin 20s linear infinite;
+}
+.logo:hover{
+  animation: blink 2s linear infinite;
+}
+.logo{
+  position: relative;
+  left: 50px;
+  height: 17.5%;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+
+}
+.top{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto auto auto auto;
+  margin-top: 140px;
+  background-color: #171717;
+  opacity: 30%;
+  border-radius: 10px;
+  border: solid 13px;
+  border-color: #000000;
+  border-radius: 70px 70px 70px 70px;
+  padding-top: 0px;
+
+}
+.top:hover
+  {
+        background-color: #000000;
+        border-color: white;
+        opacity: 70%;
+        border-radius: 70px 0px 70px 0px;
+        box-shadow: 0px 0px 80px 7px white;
+
+  }
+.btn:hover {
+      color: black;
+      background-color: orange;
+      box-shadow: 0px 0px 80px 2px white;
+      font-size: 1.6rem;
+      opacity: 100%;
+      border-color: black;
+  }
+input:hover{
+  box-shadow: 0px 0px 40px 10px orange;
+  border: solid 3px;
+  color: black;
+}
+label:hover{
+  color: #BD1616;
+  font-size: 1.7rem;
+}
+.top > .username:hover
+    {
+        opacity: 100%;
+        back
+    }
+
+.box{
+        padding-top: 100px;
+
+  }
+  h1{
+    text-align: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    border-color: black;
+    font-size: 2.7rem;
+  }
+  .form{
+    border-color: #000000;
+    height: 330px;
+    opacity: 70%;
+  }
+  label{
+    padding-left: 120px;
+    color: white;
+  }
+  .btn{
+    font-size: 1.4rem;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    margin-top: 1px;
+    margin-left: 260px;
+  }
+  .username{
+    position: relative;
+    bottom: 32px;
+    right: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+
+  }
+  .username-input{
+    position: relative;
+    right: 5px;
+    border-radius: 30px;
+    font-size: 2rem;
+    right: 0px;
+    left: 80px;
+    bottom: 70px;
+    left: 170px;
+    width: 300px;
+    text-align: center;
+  }
+  .password{
+    position: relative;
+    padding-left: 0px;
+    left: 25px;
+    bottom: 30px;
+    font-size: 1.5rem;
+    font-family: 'Shadows Into Light', cursive;
+
+  }
+  .password-input{
+    position: relative;
+    right: 15px;
+    border-radius: 30px;
+    font-size: 2rem;
+    right: 0px;
+    left: 88px;
+    width: 300px;
+    top: auto;
+    bottom: 30px;
+    text-align: center;
+  }
+  .back{
+    position: relative;
+    width:auto;
+    height: auto;
+    font-size: 1.4rem;
+    margin-left: 205px;
+    margin-top: 60px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    margin-top: 1px;
+    margin-left: 80px;
+    bottom: 36px;
+  }
+  .back:hover{
+    color: black;
+    background-color: orange;
+    box-shadow: 0px 0px 80px 2px white;
+    font-size: 1.6rem;
+    opacity: 100%;
+    border-color: black;
+
+  }
+.box {
+  width: auto;
+  height: auto;
+  margin: 80px auto 0px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  padding-top: 0px;
+  margin-top: 50px;
+}
+.box .border {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 30px;
+  height: 50px;
+  background: transparent;
+  border: 4px solid transparent;
+  border-top-color: orangered;
+  border-radius: 50%;
+  animation-name: border;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes border {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
